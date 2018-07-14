@@ -1,0 +1,36 @@
+1
+create input A
+create input B
+create input C_in
+create XORGate xor1
+wire A xor1
+wire B xor1
+create XORGate xor2
+wire xor1 xor2
+wire C_in xor2
+create ANDGate and1
+create ANDGate and2
+wire xor1 and1
+wire C_in and1
+wire A and2
+wire B and2
+create ORGate or1
+wire and1 or1
+wire and2 or1
+create output C_out
+create output sum
+wire xor2 sum
+wire or1 C_out
+draw full_adder
+setinput A 0
+setinput B 0
+setinput C_in 0
+exec
+setinput A 1
+exec
+setinput C_in 1
+exec
+setinput B 1
+exec
+setinput C_in 0
+exec 

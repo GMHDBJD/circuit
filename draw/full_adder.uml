@@ -1,0 +1,34 @@
+@startuml
+object A
+A :  <img:../image/InputGate.png>
+object B
+B :  <img:../image/InputGate.png>
+object C_in
+C_in :  <img:../image/InputGate.png>
+object C_out
+C_out :  <img:../image/OutputGate.png>
+object and1
+and1 :  <img:../image/ANDGate.png>
+object and2
+and2 :  <img:../image/ANDGate.png>
+object or1
+or1 :  <img:../image/ORGate.png>
+object sum
+sum :  <img:../image/OutputGate.png>
+object xor1
+xor1 :  <img:../image/XORGate.png>
+object xor2
+xor2 :  <img:../image/XORGate.png>
+A --> and2
+A --> xor1
+B --> and2
+B --> xor1
+C_in --> and1
+C_in --> xor2
+and1 --> or1
+and2 --> or1
+or1 --> C_out
+xor1 --> and1
+xor1 --> xor2
+xor2 --> sum
+@enduml

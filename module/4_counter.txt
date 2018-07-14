@@ -1,0 +1,31 @@
+import JK as jk1
+import JK as jk2
+create input CLK
+create input H
+create input CTEN
+create input CLR
+create output Q1
+create output Q2
+create output TC
+create ANDGate ctenand1
+create ANDGate ctenand2
+wire CTEN ctenand1
+create ANDGate tcand
+wire jk1.Q tcand
+wire jk2.Q tcand
+wire tcand TC
+setinput H 1
+wire H ctenand1
+wire ctenand1 jk1.K
+wire ctenand1 jk1.J
+wire CLK jk1.CLK
+wire CLK jk2.CLK
+wire CTEN ctenand2
+wire jk1.Q ctenand2
+wire ctenand2 jk2.J
+wire ctenand2 jk2.K
+wire jk1.Q Q1
+wire jk2.Q Q2
+wire CLR jk1.CLR
+wire CLR jk2.CLR
+setinput CLR 1

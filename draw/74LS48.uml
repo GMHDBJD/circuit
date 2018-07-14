@@ -1,0 +1,195 @@
+@startuml
+object 48.A
+48.A :  <img:../image/InputGate.png>
+object 48.B
+48.B :  <img:../image/InputGate.png>
+object 48.C
+48.C :  <img:../image/InputGate.png>
+object 48.D
+48.D :  <img:../image/InputGate.png>
+object 48.NA
+48.NA :  <img:../image/NOTGate.png>
+object 48.NB
+48.NB :  <img:../image/NOTGate.png>
+object 48.NC
+48.NC :  <img:../image/NOTGate.png>
+object 48.ND
+48.ND :  <img:../image/NOTGate.png>
+object 48.a
+48.a :  <img:../image/OutputGate.png>
+object 48.abc
+48.abc :  <img:../image/ORGate.png>
+object 48.abcnd
+48.abcnd :  <img:../image/ORGate.png>
+object 48.abnc
+48.abnc :  <img:../image/ORGate.png>
+object 48.abncd
+48.abncd :  <img:../image/ORGate.png>
+object 48.abnd
+48.abnd :  <img:../image/ORGate.png>
+object 48.anbc
+48.anbc :  <img:../image/ORGate.png>
+object 48.anbcd
+48.anbcd :  <img:../image/ORGate.png>
+object 48.anbcnd
+48.anbcnd :  <img:../image/ORGate.png>
+object 48.anbncnd
+48.anbncnd :  <img:../image/ORGate.png>
+object 48.ancnd
+48.ancnd :  <img:../image/ORGate.png>
+object 48.and
+48.and :  <img:../image/ORGate.png>
+object 48.b
+48.b :  <img:../image/OutputGate.png>
+object 48.bcnd
+48.bcnd :  <img:../image/ORGate.png>
+object 48.c
+48.c :  <img:../image/OutputGate.png>
+object 48.d
+48.d :  <img:../image/OutputGate.png>
+object 48.down
+48.down :  <img:../image/ANDGate.png>
+object 48.e
+48.e :  <img:../image/OutputGate.png>
+object 48.f
+48.f :  <img:../image/OutputGate.png>
+object 48.g
+48.g :  <img:../image/OutputGate.png>
+object 48.leftdown
+48.leftdown :  <img:../image/ANDGate.png>
+object 48.lefttop
+48.lefttop :  <img:../image/ANDGate.png>
+object 48.middle
+48.middle :  <img:../image/ANDGate.png>
+object 48.nabncd
+48.nabncd :  <img:../image/ORGate.png>
+object 48.nabncnd
+48.nabncnd :  <img:../image/ORGate.png>
+object 48.nanbcd
+48.nanbcd :  <img:../image/ORGate.png>
+object 48.nanbcnd
+48.nanbcnd :  <img:../image/ORGate.png>
+object 48.nanbd
+48.nanbd :  <img:../image/ORGate.png>
+object 48.nanbnc
+48.nanbnc :  <img:../image/ORGate.png>
+object 48.nancnd
+48.nancnd :  <img:../image/ORGate.png>
+object 48.nbncd
+48.nbncd :  <img:../image/ORGate.png>
+object 48.nbncnd
+48.nbncnd :  <img:../image/ORGate.png>
+object 48.rightdown
+48.rightdown :  <img:../image/ANDGate.png>
+object 48.righttop
+48.righttop :  <img:../image/ANDGate.png>
+object 48.top
+48.top :  <img:../image/ANDGate.png>
+48.A --> 48.NA
+48.A --> 48.abc
+48.A --> 48.abcnd
+48.A --> 48.abnc
+48.A --> 48.abncd
+48.A --> 48.abnd
+48.A --> 48.anbc
+48.A --> 48.anbcd
+48.A --> 48.anbcnd
+48.A --> 48.anbncnd
+48.A --> 48.ancnd
+48.A --> 48.and
+48.B --> 48.NB
+48.B --> 48.abc
+48.B --> 48.abcnd
+48.B --> 48.abnc
+48.B --> 48.abncd
+48.B --> 48.abnd
+48.B --> 48.bcnd
+48.B --> 48.nabncd
+48.B --> 48.nabncnd
+48.C --> 48.NC
+48.C --> 48.abc
+48.C --> 48.abcnd
+48.C --> 48.anbc
+48.C --> 48.anbcd
+48.C --> 48.anbcnd
+48.C --> 48.bcnd
+48.C --> 48.nanbcd
+48.C --> 48.nanbcnd
+48.D --> 48.ND
+48.D --> 48.abncd
+48.D --> 48.anbcd
+48.D --> 48.nabncd
+48.D --> 48.nanbcd
+48.D --> 48.nanbd
+48.D --> 48.nbncd
+48.NA --> 48.nabncd
+48.NA --> 48.nabncnd
+48.NA --> 48.nanbcd
+48.NA --> 48.nanbcnd
+48.NA --> 48.nanbd
+48.NA --> 48.nanbnc
+48.NA --> 48.nancnd
+48.NB --> 48.anbc
+48.NB --> 48.anbcd
+48.NB --> 48.anbcnd
+48.NB --> 48.anbncnd
+48.NB --> 48.nanbcd
+48.NB --> 48.nanbcnd
+48.NB --> 48.nanbd
+48.NB --> 48.nanbnc
+48.NB --> 48.nbncd
+48.NB --> 48.nbncnd
+48.NC --> 48.abnc
+48.NC --> 48.abncd
+48.NC --> 48.anbncnd
+48.NC --> 48.ancnd
+48.NC --> 48.nabncd
+48.NC --> 48.nabncnd
+48.NC --> 48.nanbnc
+48.NC --> 48.nancnd
+48.NC --> 48.nbncd
+48.NC --> 48.nbncnd
+48.ND --> 48.abcnd
+48.ND --> 48.abnd
+48.ND --> 48.anbcnd
+48.ND --> 48.anbncnd
+48.ND --> 48.ancnd
+48.ND --> 48.and
+48.ND --> 48.bcnd
+48.ND --> 48.nabncnd
+48.ND --> 48.nanbcnd
+48.ND --> 48.nancnd
+48.ND --> 48.nbncnd
+48.abc --> 48.middle
+48.abcnd --> 48.down
+48.abcnd --> 48.top
+48.abnc --> 48.lefttop
+48.abncd --> 48.rightdown
+48.abnd --> 48.lefttop
+48.anbc --> 48.leftdown
+48.anbcd --> 48.down
+48.anbcd --> 48.top
+48.anbcnd --> 48.righttop
+48.anbncnd --> 48.middle
+48.ancnd --> 48.lefttop
+48.and --> 48.leftdown
+48.bcnd --> 48.leftdown
+48.down --> 48.d
+48.leftdown --> 48.e
+48.lefttop --> 48.f
+48.middle --> 48.g
+48.nabncd --> 48.down
+48.nabncnd --> 48.top
+48.nanbcd --> 48.middle
+48.nanbcd --> 48.rightdown
+48.nanbcnd --> 48.lefttop
+48.nanbcnd --> 48.top
+48.nanbd --> 48.righttop
+48.nanbnc --> 48.rightdown
+48.nancnd --> 48.righttop
+48.nbncd --> 48.righttop
+48.nbncnd --> 48.down
+48.rightdown --> 48.c
+48.righttop --> 48.b
+48.top --> 48.a
+@enduml

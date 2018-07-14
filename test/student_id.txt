@@ -1,0 +1,92 @@
+2
+import 74LS48 as 48
+import 74LS138 as 138
+import JK as jk1
+import JK as jk2
+import JK as jk3
+create ANDGate and1
+create input CLK
+wire CLK jk1.CLK
+wire CLK jk2.CLK
+wire CLK jk3.CLK
+wire jk3.NQ jk1.J
+wire jk3.NQ and1
+wire jk2.Q and1
+wire and1 jk1.K
+wire jk1.Q jk2.J
+wire jk3.NQ jk2.K
+wire jk1.Q jk3.J
+wire jk3.Q jk3.K
+connect 48.a _a1
+connect 48.b _b1
+connect 48.c _c1
+connect 48.d _d1
+connect 48.e _e1
+connect 48.f _f1
+connect 48.g _g1
+connect 48.a _a2
+connect 48.b _b2
+connect 48.c _c2
+connect 48.d _d2
+connect 48.e _e2
+connect 48.f _f2
+connect 48.g _g2
+connect 48.a _a3
+connect 48.b _b3
+connect 48.c _c3
+connect 48.d _d3
+connect 48.e _e3
+connect 48.f _f3
+connect 48.g _g3
+connect 48.a _a4
+connect 48.b _b4
+connect 48.c _c4
+connect 48.d _d4
+connect 48.e _e4
+connect 48.f _f4
+connect 48.g _g4
+connect 48.a _a5
+connect 48.b _b5
+connect 48.c _c5
+connect 48.d _d5
+connect 48.e _e5
+connect 48.f _f5
+connect 48.g _g5
+connect 48.a _a6
+connect 48.b _b6
+connect 48.c _c6
+connect 48.d _d6
+connect 48.e _e6
+connect 48.f _f6
+connect 48.g _g6
+connect 48.a _a7
+connect 48.b _b7
+connect 48.c _c7
+connect 48.d _d7
+connect 48.e _e7
+connect 48.f _f7
+connect 48.g _g7
+connect 48.a _a8
+connect 48.b _b8
+connect 48.c _c8
+connect 48.d _d8
+connect 48.e _e8
+connect 48.f _f8
+connect 48.g _g8
+connect 138.b _1
+connect 138.h _2
+connect 138.d _3
+connect 138.e _4
+connect 138.a _5
+connect 138.a _6
+connect 138.a _7
+connect 138.d _8
+wire jk1.Q 48.D
+wire jk2.Q 48.C
+wire jk3.Q 48.B
+setinput 48.A 0
+wire jk1.Q 138.C
+wire jk2.Q 138.B
+wire jk3.Q 138.A
+draw student_id
+exec

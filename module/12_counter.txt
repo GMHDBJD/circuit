@@ -1,0 +1,35 @@
+import dec_counter as dec1
+import dec_counter as dec2
+create input CTEN
+create input CLK
+create input CLR
+create output TC
+create ANDGate and1
+wire CTEN and1
+wire dec1.TC and1
+wire CTEN dec1.CTEN
+wire and1 dec2.CTEN
+wire CLK dec1.CLK
+wire CLK dec2.CLK
+create NANDGate nand1
+wire dec1.Q1 nand1
+wire dec1.Q2 nand1
+wire dec2.Q1 nand1
+wire nand1 CLR
+wire CLR dec1.CLR
+remove_wire dec1.CLR dec1.jk1.CLR
+setinput dec1.jk1.CLR 0
+create ORGate or1
+create NOTGate not1
+create input CLRPRE
+setinput CLRPRE 0
+wire CLRPRE not1
+wire not1 or1
+wire CLR or1
+wire or1 dec1.jk1.PRE
+wire CLR dec2.CLR
+create ANDGate and2
+wire dec1.Q2 and2
+wire dec2.Q1 and2
+wire CTEN and2
+wire and2 TC

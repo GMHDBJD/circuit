@@ -1,0 +1,10 @@
+create input CLK
+create NOTGate nclk
+create NANDGate nandclk
+create NOTGate  nnandclk
+create output P
+wire CLK nclk
+wire CLK nandclk
+wire nclk nandclk
+wire nandclk nnandclk
+wire nnandclk P
